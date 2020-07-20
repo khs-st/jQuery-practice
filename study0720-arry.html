@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            //변수 선언
+            var array = [{
+                    name: 'Kobalja',
+                    link: 'https://kobalja2020.tistory.com/'
+                },
+                {
+                    name: 'Naver',
+                    link: 'http://www.naver.com'
+                }
+            ];
+
+            $.each(array, function (index, item) {
+                var output = '';
+
+                output += '<a href="' + item.link + '">';
+                output += '    <h1>' + item.name + '</h1>';
+                output += '</a>';
+
+                document.body.innerHTML += output;
+            });
+            
+            $('h1').each(function(index, item){
+                $(this).addClass('high-light-'+index);
+            });
+        });
+    </script>
+    <style>
+        .high-light-0{background: skyblue;}
+        .high-light-1{background: springgreen;}
+    </style>
+</head>
+
+<body>
+
+</body>
+
+</html>
