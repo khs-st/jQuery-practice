@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        /*
+        //filter() 메서드 
+        $(document).ready(function () {
+            $('h1:even').css({
+                backgroundColor: 'black',
+                color: 'white'
+            });
+        });
+        $(document).ready(function () {
+            $('h1').filter(':even').css({
+                backgroundColor: 'black',
+                color: 'white'
+            });
+        });
+
+        */
+        //filter() 메서드의 매개변수로 함수를 넣을 경우
+        // $(document).ready(function(){
+        //     $('h1').filter(function(index){
+        //         return index%3==0;
+        //     }).css({
+        //         backgroundColor:'black',color:'white'
+        //     });
+        // });
+
+        //add()메서드
+        $(document).ready(function () {
+            $('h1').css('background', 'gray').add('h2').css('float', 'left');
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Header-1</h1>
+    <h1>Header-2</h1>
+    <h1>Header-3</h1>
+    <h1>Header-4</h1>
+    <h2>float right</h2>
+    <h2>float right</h2>
+</body>
+
+</html>

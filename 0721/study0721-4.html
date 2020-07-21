@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            var num = Number(prompt('숫자를 입력하시오.', '0'));
+            var array = [];
+            for (var i = 1; i <= num; i++) {
+                var myRandom = Math.floor(Math.random() * 6);
+                array[myRandom]++;
+            }
+            $('h1').each(array,function (index) {
+                if ($(this).is('rate')) {
+                    $(this).html('array[index]1');
+                }
+                if ($(this).is('rate1')) {
+                    $(this).html('array[index]1');
+                }
+
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <h1 class="rate"></h1>
+    <h1 class="rate1"></h1>
+    <h1 class="rate"></h1>
+    <h1 class="rate1"></h1>
+    <h1 class="rate"></h1>
+    <h1 class="rate1"></h1>
+    <h1 class="rate"></h1>
+    <h1 class="rate1"></h1>
+    <h1 class="rate"></h1>
+    <h1 class="rate1"></h1>
+    <h1 class="rate"></h1>
+    <h1 class="rate1"></h1>
+</body>
+
+</html>

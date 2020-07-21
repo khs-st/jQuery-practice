@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        //jQuery로 클래스 추가 후 배경색 주기
+        $(document).ready(function(){
+           $('h1').css('color','blue');
+           $('#kobal').attr('id','kobalja');
+           $('h1#kobalja').css('backgroundColor','skyblue');
+        });
+    </script>
+   
+</head>
+<body>
+    <h1>JavaScript</h1>
+    <h1>jQuery</h1>
+    <h1 id="kobal">kobalja</h1>
+</body>
+</html>
