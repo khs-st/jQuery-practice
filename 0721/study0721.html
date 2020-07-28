@@ -9,22 +9,22 @@
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script>
         /*
-        //filter() 메서드 
+        filter() 메서드 
         $(document).ready(function () {
             $('h1:even').css({
                 backgroundColor: 'black',
-                color: 'white'
+                color: 'red'
             });
         });
         $(document).ready(function () {
             $('h1').filter(':even').css({
                 backgroundColor: 'black',
-                color: 'white'
+                color: 'red'
             });
         });
 
         */
-        //filter() 메서드의 매개변수로 함수를 넣을 경우
+        // filter() 메서드의 매개변수로 함수를 넣을 경우
         // $(document).ready(function(){
         //     $('h1').filter(function(index){
         //         return index%3==0;
@@ -35,18 +35,23 @@
 
         //add()메서드
         $(document).ready(function () {
-            $('h1').css('background', 'gray').add('h2').css('float', 'left');
+            $('h2').css('float', 'left');
+        });
+        $(document).ready(function(){
+            $('h2').css('color','blue').add('h3').css('background','skyblue');
         });
     </script>
 </head>
 
 <body>
+    <h1>Header-0</h1>
     <h1>Header-1</h1>
     <h1>Header-2</h1>
     <h1>Header-3</h1>
-    <h1>Header-4</h1>
-    <h2>float right</h2>
-    <h2>float right</h2>
+    <h2>float left</h2>
+    <h2>float left</h2>
+    <h3>add 메서드</h3>
+    <h3>add 메서드</h3>
 </body>
 
 </html>
